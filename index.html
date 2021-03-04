@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<!-- Title -->
+		<title>Campus Radio Live</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/icon.png">
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Twitter metadata -->
+		<meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Campus Radio Live" />
+        <meta name="twitter:description" content="Walk around college campus worldwide while listening to local radios." />
+		
+		<!-- Open Graph metadata-->
+		<meta property="og:url" content="#"/>
+        <meta property="og:title" content="Campus Radio Live" />
+        <meta property="og:description" content="Walk around college campus worldwide while listening to local radios." />
+
+		
+		<!-- Description metadata-->
+		<meta name="description" content="Walk around your college campus worldwide while listening to local radios." />
+
+		<!-- Styles -->
+		<link href="css/index.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+		<!-- Scripts -->
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="js/locations.js"></script>
+		<script src="js/radio.js"></script>
+		<script src="js/player.js"></script>
+		<script src="js/state.js"></script>
+	</head>
+	<body>
+		<div class="app">
+			<!-- Loading element -->
+			<div class="loading">
+				<h1>"Preparing your Virtual Tour"</h1>
+			</div>
+
+			<!-- Location Element-->
+			<div class="location"></div>
+
+			<!-- Youtube player element -->
+			<div class="player" id="player"></div>
+
+			<!-- Show/Hide button -->
+			<div class="show-hide" onclick="toggleMenu()"><i class="fas fa-eye-slash"></i></div>
+
+			<!-- Menu -->
+			<div class="menu">
+				<!-- Cities -->
+				<div class="cities">
+					<div class="cities-header">
+						<p>Campus</p>
+					</div>
+					<div class="cities-list">
+						<ul></ul>
+					</div>
+				</div>
+
+				<!-- Random City -->
+				<div class="random-city" onclick="changeLocation(chooseRandomLocation().id)">
+					<p>Take me to a random campus.</p>
+				</div>
+
+				<!-- Radio -->
+				<div class="radio">
+					<!-- Radio Header -->
+					<div class="radio-header"></div>
+					
+					<!-- Radio Controls -->
+					<div class="radio-controls">
+						<div class="radio-play-pause" onclick="togglePlayPause()"><i class="fas fa-pause"></i></div>
+						<div class="radio-volume"><input type="range" min="0" max="100" step="1" value="50" onchange="setVolume(this.value)"></div>
+					</div>
+
+					<!-- Radio Source -->
+					<iframe src="assets/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+					<audio autoplay onplay="removeRadioLoading()"></audio>
+				</div>
+
+				<!-- Configuration -->
+				<div class="configuration">
+					<!-- Noise configuration -->
+					<div class="configuration-group">
+						<p>Noise</p>
+						<button onclick="toggleNoise(this)">OFF</button>
+					</div>
+
+					<!-- Speed configuration -->
+					<div class="configuration-group">
+						<p>Speed</p>
+
+						<div class="buttons">
+							<button data-speed="1" class="active" onclick="setSpeed(1)">1X</button>
+							<button data-speed="1.5" onclick="setSpeed(1.5)">1.5X</button>
+							<button data-speed="2" onclick="setSpeed(2)">2X</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="information">
+					<div class="social">
+						<a target="blank" href="https://github.com/radioNITW"><i class="fab fa-github"></i></a>
+						<a target="blank" href="https://twitter.com/campus-radio-live"><i class="fab fa-twitter"></i></a>
+						<a target="blank" href="mailto:cybsec19@gmail.com"><i class="fas fa-envelope"></i></a>
+						<a target="blank" href="https://cybsec.in"><i class="fas fa-globe"></i></a>
+					</div>
+					
+					<div class="video-source">
+						<a target="blank"></a>
+					</div>
+				</div>
+
+				<!-- Footer -->
+				<div class="footer">
+					<p><a target="blank" href="https://driveandlisten.herokuapp.com">Campus Radio Live</a></p>
+					<p>Roam in some beautiful campuses around the world.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main Script File (DOM & Input Manipulation)-->
+		<script src="js/index.js"></script>
+	</body>
+</html>
