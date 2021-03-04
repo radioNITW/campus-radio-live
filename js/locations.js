@@ -5,7 +5,7 @@ LOCATIONS = [ // http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3
 		"videoId": "iGeuCueiYgc",
 		"radio": {
 			"url": "http://s18.myradiostream.com:9676/;stream.nsv",
-			"name": "NIT Warangal songs"
+			"name": "NIT Warangal Radio"
 		},
 		"startTime": 13
 	},
@@ -15,7 +15,7 @@ LOCATIONS = [ // http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3
 		"videoId": "tZWW3mVp6MA",
 		"radio": {
 			"url": "http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3",
-			"name": "IIT Kanpur"
+			"name": "IIT Kanpur Radio"
 		},
 		"startTime": 29
 	},
@@ -25,7 +25,7 @@ LOCATIONS = [ // http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3
 		"videoId": "SLKgz63zK5s",
 		"radio": {
 			"url": "https://au1.fastcast4u.com/proxy/dzcwbfih_relay?mp=/1",
-			"name": "NIT Trichy"
+			"name": "NIT Trichy Radio"
 		},
 		"startTime": 57
 	},
@@ -35,7 +35,7 @@ LOCATIONS = [ // http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3
 		"videoId": "6Pgyr0H1XLQ",
 		"radio": {
 			"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/977_HITSAAC_SC",
-			"name": "IIT Delhi"
+			"name": "IIT Delhi Radio"
 		},
 		"startTime": 01
 	},
@@ -45,7 +45,7 @@ LOCATIONS = [ // http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3
 		"videoId": "4JBI2RCmAII",
 		"radio": {
 			"url": "https://ice08.fluidstream.net/ibiza.aac",
-			"name": "AIIMS Delhi"
+			"name": "AIIMS Delhi Radio"
 		},
 		"startTime": 10
 	},
@@ -55,7 +55,7 @@ LOCATIONS = [ // http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3
 		"videoId": "yyXDs7LZpz8",
 		"radio": {
 			"url": "https://cadena100-cope-rrcast.flumotion.com/cope/cadena100-low.mp3",
-			"name": "IIM Bangalore"
+			"name": "IIM Bangalore Radio"
 		},
 		"startTime": 19
 	}
