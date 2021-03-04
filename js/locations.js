@@ -4,7 +4,7 @@ LOCATIONS = [ // http://stream1.bestfmbudapest.hu/bestfm_nyiregyhaza.mp3
 		"name": "NIT, Warangal",
 		"videoId": "iGeuCueiYgc",
 		"radio": {
-			"url": "http://radio.staychu.com/Arijit%20Singh%20-%20Dekh%20Lena.mp3",
+			"url": "http://s18.myradiostream.com:9676/;stream.nsv",
 			"name": "NIT Warangal songs"
 		},
 		"startTime": 13
